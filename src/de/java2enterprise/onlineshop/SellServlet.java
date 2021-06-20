@@ -42,7 +42,7 @@ public class SellServlet extends HttpServlet {
         out.println("<br>name: "+ price);
         out.println("<br>submitted: "+ file.getAbsolutePath());
         out.println("</body>");
-        out.println("</html>");test
+        out.println("</html>");
 
         final AsyncContext ac = request.startAsync();
         ac.start(new FotoService(is, os));
